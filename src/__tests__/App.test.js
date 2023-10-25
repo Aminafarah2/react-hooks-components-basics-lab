@@ -14,9 +14,15 @@ test("renders the correct child components", () => {
     Uncomment the line below to see the DOM elements being returned
     by the App component in your terminal when you run the tests
   */
-  // screen.debug();
+    
+ 
 
+  // screen.debug();
+  const navBarComponents=container.querySelector("nav");
   expect(container.querySelector("nav")).toBeInTheDocument();
+  const homeComponents=container.querySelector("#home");
   expect(container.querySelector("#home")).toBeInTheDocument();
+  const aboutComponents=container.querySelector("#about");
   expect(container.querySelector("#about")).toBeInTheDocument();
 });
+
